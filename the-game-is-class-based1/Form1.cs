@@ -1,13 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using ConsoleApplication1;
 
-namespace ConsoleApplication1
+namespace the_game_is_class_based1
 {
-    class Program
+    public partial class Form1 : Form
     {
-        static void Main(string[] args)
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
             Character paladin1 = new paladin(800, 400, 80);
             Character Preast1 = new Preast(400, 900, 300);
@@ -17,19 +28,6 @@ namespace ConsoleApplication1
             Character Preast2 = new Preast(400, 900, 300);
             Character Shaman2 = new Shaman(900, 700, 50);
             Character Rogue2 = new Rogue(360, 500, 100);
-
-            List<Character> AllCharacter = new List<Character>();
-
-            AllCharacter.Add(paladin1);
-            AllCharacter.Add(Preast1);
-            AllCharacter.Add(Shaman1);
-            AllCharacter.Add(Rogue1);
-            AllCharacter.Add(paladin2);
-            AllCharacter.Add(Preast2);
-            AllCharacter.Add(Shaman2);
-            AllCharacter.Add(Rogue2);
-            Console.ReadLine();
         }
     }
 }
-
