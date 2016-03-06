@@ -8,12 +8,31 @@ namespace ConsoleApplication1
     public class Character
     {
         public Character target;
-        public int HP;
-        public int MP;
-        public int damage;
+        private int hp;
+
+        public int Hp
+        {
+            get { return hp; }
+            set { hp = value; }
+        }
+
+        private int mp;
+
+        public int Mp
+        {
+            get { return mp; }
+            set { mp = value; }
+        }
+        private int damage;
+
+        public int Damage
+        {
+            get { return damage; }
+            set { damage = value; }
+        }
         public void Attack()
         {
-            target.MP -= damage;
+            target.Mp -= damage;
         }
 
     }

@@ -7,11 +7,11 @@ namespace ConsoleApplication1
 {
     public class Rogue : Character
     {
-        public Rogue(int HP, int MP, int damage)
+        public Rogue(int Hp, int Mp, int damage)
         {
-            this.HP = HP;
-            this.MP = MP;
-            this.damage = damage;
+            this.Hp = Hp;
+            this.Mp = Mp;
+            this.Damage = damage;
         }
     }
 }
